@@ -14,15 +14,15 @@ def jelszo_erosseg(passw):
     return strength
 
 class TestArmstrong_Numbers(unittest.TestCase):
-    def test_one(self):
+    def test_strong(self):
         fgv = jelszo_erosseg('hazi.macska_4_life')
         self.assertEqual(fgv, 10)
 
-    def test_two(self):
+    def test_weak(self):
         fgv = jelszo_erosseg("ez1feltorhetetlenjelszo")
         self.assertEqual(fgv, 0)
 
-    def test_zeroeth(self):
+    def test_zero(self):
         fgv = jelszo_erosseg('Bármi_erős_kulcs_123')
         self.assertLessEqual(fgv, 0)
 
