@@ -21,4 +21,7 @@ jobs:
 
       - name: Run Tests
         run: |
-          python app.py
+          python armstrong.py
+          python jelszo.py
+          python lepes.py
+          python mgh_torol.py
